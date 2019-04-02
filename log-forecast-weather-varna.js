@@ -17,5 +17,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?id=726051&appid=b34ca5d56
     }
   )
   .catch(function(err) {
+
     console.log('Fetch Error :-S', err);//test
+
   });
