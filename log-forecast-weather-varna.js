@@ -3,6 +3,6 @@ fetch('https://api.openweathermap.org/data/2.5/weather?id=726051&appid=b34ca5d56
     .then((data) => {
         console.log('Description: ' + data.weather[0].description);
         console.log('Wind speed: ' + data.wind.speed);
-        console.log('Min Temprature: ' + data.main.temp_min - 273.15);
-        console.log('Max Temprature: ' + data.main.temp_max - 273.15);
+        console.log('Min Temprature: ' + (data.main.temp_min - 273.15));
+        console.log('Max Temprature: ' + (data.main.temp_max - 273.15));
     });
