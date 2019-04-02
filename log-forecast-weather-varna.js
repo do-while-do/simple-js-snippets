@@ -7,7 +7,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?id=726051&appid=b34ca5d56
         return;
       }
 
-      // Examine the text in the responsee
+      // Examine the text in the response
       response.json().then(function(data) {
         console.log('Description: ' + data.weather[0].description);
         console.log('Wind speed: ' + data.wind.speed);
